@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Shopping</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: antiquewhite;
+      line-height: 1.6;
+      margin: 20px;
+      /* max-width: 80%; */
+      padding-left: 45px;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    .accordion-item {
+        max-width: 80%;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+    .accordion-title {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .accordion-content {
+      display: none;
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    .accordion-title:hover {
+      color: #007bff;
+    }
+    .plus-icon {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>SECURE SHOPPING</h1>
+  <h2>YOUR DATA DESERVES THE VIP TREATMENT</h2>
+  <p>
+    Shopping online at hm.com should be fun and easy. That’s why it is important we are aware of potential cyber threats.
+  </p>
+  <p>
+    Here are some tips from us for how to stay safe while shopping online at hm.com — and what to do if you see something suspicious.
+  </p>
+  <h2>SEEN SOMETHING SUSPICIOUS?</h2>
+  <p>
+    Have you been the victim of a scam or a phishing attempt? Discover how to spot the signs and where to report it if you see them.
+  </p>
+
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>WHAT IS PHISHING?</span>
+      <span class="plus-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      Phishing is a type of online scam where attackers impersonate legitimate organizations via email, text message, or other communication to steal personal information like passwords or credit card numbers.
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>TIPS TO AVOID PHISHING</span>
+      <span class="plus-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      Always verify the sender's identity, avoid clicking on suspicious links, and enable two-factor authentication on your accounts.
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>REPORT A SCAM</span>
+      <span class="plus-icon">+</span>
+    </div>
+    <div class="accordion-content">
+      If you suspect a phishing scam, report it to your local authorities or the organization being impersonated.
+    </div>
+  </div>
+
+
+  <h2>STAY SAFE ONLINE</h2>
+  <p>
+    Staying safe online is important. Here are some actions you can take to browse more securely and shop worry-free.
+  </p>
+
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>PROTECTING PAYMENTS</span>
+      <span class="plus-icon">+</span>
+    </div>
+    <div class="accordion-content">
+        Use reliable payment methods like credit cards or trusted online payment systems. These options usually come with extra layers of security. 
+
+        Our secure checkout process is designed to protect your payment details. We use advanced encryption and tokenisation technologies to ensure your transactions are safe.
+        
+        We will only ask for payment details to complete your purchase at hm.com and will never ask you to pay to take part in any competition, event or similar. making a purchase may be required to participate, but no extra payment will be requested.
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>UNIQUE PASSWORD</span>
+      <span class="plus-icon">+</span>
+    </div>
+    <div class="accordion-content">
+        Pick a mix of letters, numbers, and symbols in your passwords.
+
+        A long password is more difficult to crack than a short one, so aim for at least 12 characters. It may be easier to think of it as a passphrase rather than a password.
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-title">
+      <span>SOFTWARE UPDATE</span>
+      <span class="plus-icon">+</span>
+    </div>
+    <div class="accordion-content">
+        Turn on the automatic updates on your devices to keep them protected from malware. 
+
+        Software updates often include security enhancements, so keeping your devices updated helps you stay protected against the latest cyber threats.
+        
+        Remember to keep all your smart devices updated. This includes devices like smartphones, smartwatches or smart speakers.
+        
+        
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.accordion-title').forEach(item => {
+      item.addEventListener('click', () => {
+        const content = item.nextElementSibling;
+        const plusIcon = item.querySelector('.plus-icon');
+
+        if (content.style.display === 'block') {
+          content.style.display = 'none';
+          plusIcon.textContent = '+';
+        } else {
+          content.style.display = 'block';
+          plusIcon.textContent = '-';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M Group</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(to right, #ffffff, #f8f9fa);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #d9534f;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            color: #c9302c;
+        }
+
+        .nav-link {
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #d9534f;
+        }
+
+        /* About Section */
+        #about-section {
+
+            background-color: beige;
+            /* padding: 4rem 2rem; */
+            text-align: center;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            animation: fadeIn 1s ease;
+        }
+
+        #about-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        #about-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Stats Section */
+        #stats-section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .stat-item h2 {
+            font-size: 3rem;
+            color: #d9534f;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Keyframes for Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #about-section h1 {
+                font-size: 2rem;
+            }
+
+            #about-section p {
+                font-size: 1rem;
+            }
+
+            .stat-item h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+
+
+
+        /* Brands Section */
+#brands-section {
+    background-color: bisque;
+}
+
+.brand-logo {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brand-logo img {
+    max-height: 60px;
+}
+
+.brand-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* New Section Styles */
+#new-section {
+    background-color: #ffffff;
+}
+
+#new-section .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#new-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#new-section .card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#new-section .card-text {
+    color: #555;
+}
+
+#new-section .btn-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #d9534f;
+    transition: color 0.3s ease;
+}
+
+#new-section .btn-link:hover {
+    color: #c9302c;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">H&M</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#" id="careers">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sustainability.html" target="_blank" id="sustainable">Sustainability</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Investor relations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="Corporate">Corporate governance</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main-section">
+        <!-- About Section -->
+    <section id="about-section">
+        <div class="container">
+            <h1>About us</h1>
+            <p>We are a global family of brands and businesses. We make it possible for customers around the world to express themselves through fashion and design in a sustainable way.</p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats-section">
+        <div class="container">
+            <h1>H&M Group at a glance</h1>
+            <div class="stats">
+                <div class="stat-item">
+                    <h2>143,000</h2>
+                    <p>employees globally</p>
+                </div>
+                <div class="stat-item">
+                    <h2>77</h2>
+                    <p>markets with online sales in<br>60 markets</p>
+                </div>
+                <div class="stat-item">
+                    <h2>236</h2>
+                    <p>billion SEK in net sales in 2023,<br>+6% vs. 2022</p>
+                </div>
+                <div class="stat-item">
+                    <h2>85%</h2>
+                    <p>recycled or sustainably sourced materials in our commercial,<br>including 25% recycled materials</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Brands Section -->
+<section id="brands-section" class="py-5">
+    <div class="container text-center">
+        <h1 class="mb-4">Our brands and business ventures</h1>
+        <div class="row row-cols-2 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="brand-logo p-3 border">
+                    <img src="https://freepngdesign.com/content/uploads/images/hm-black-logo-4543.png" alt="H&M Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="col">
+                <div class="brand-logo p-3 border">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGdMCiCPcc_L5kYIMNM-KGVMrEJffbejQnA&s" alt="COS Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="col">
+                <div class="brand-logo p-3 border">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKXjIScaBGhf39Z9TkAfYzf0_9FSLcXGp1A&s" alt="Weekday Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="col">
+                <div class="brand-logo p-3 border">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E0BAQEnGxkfcBv-_w/company-logo_200_200/company-logo_200_200/0/1705997703618/cheap_monday_logo?e=2147483647&v=beta&t=PHeOSgSPe3rGJ2ciX70VAK2zhV_TYdZQ4TcUGfG5nn4" alt="Cheap Monday Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="col">
+                <div class="brand-logo p-3 border">
+                    <img src="https://i.pinimg.com/564x/bd/da/a5/bddaa50e59247eaec805997626aa6e5c.jpg" alt="Monki Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="col">
+                <div class="brand-logo p-3 border">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6AQPmL2dIaTWjTf_7CCKMuNoUHLK2MMDh9w&s" alt="H&M Home Logo" class="img-fluid">
+                </div>
+            </div>
+           
+            <div class="col">
+                <div class="brand-logo p-3 border">
+                    <img src="https://searchlogovector.com/wp-content/uploads/2020/05/arket-logo-vector.png" alt="ARKET Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="col">
+                <div class="brand-logo p-3 border">
+                    <img src="https://hmgroup.com/wp-content/uploads/2021/01/Singular-Society_Teaser-image-1024x686.jpg" alt="Studio Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="col">
+                <div class="brand-logo p-3 border">
+                    <img src="https://channelx.world/wp-content/uploads/2022/11/Sellpy-01-scaled-1.jpg" alt="Sellpy Logo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Next Section -->
+<section id="new-section" class="py-5">
+    <div class="container text-center">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 border-0 shadow">
+                    <img src="https://hmgroup.com/wp-content/uploads/2023/09/erling-persson-hennes.jpg" alt="Our Story" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Story</h5>
+                        <p class="card-text">
+                            From a single store in 1947, we became a family of brands, offering fashion and design to customers worldwide.
+                        </p>
+                        <!-- <a href="#" class="btn btn-link text-danger">Our history &rarr;</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow">
+                    <img src="https://hmgroup.com/wp-content/uploads/2023/09/about-us-our-values.jpg" alt="Living Our Values" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Living Our Values</h5>
+                        <p class="card-text">
+                            At H&M Group, we are guided by shared values. They are part of who we are, what we stand for, and how we act.
+                        </p>
+                        <!-- <a href="#" class="btn btn-link text-danger">Our values &rarr;</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow">
+                    <img src="https://hmgroup.com/wp-content/uploads/2023/09/about-us-inclusion-and-diversity.jpg" alt="Inclusion and Diversity" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Inclusion and Diversity</h5>
+                        <p class="card-text">
+                            We are a value-driven company that wants to lead the way to a more inclusive and diverse fashion industry.
+                        </p>
+                        <!-- <a href="#" class="btn btn-link text-danger">Inclusion and diversity &rarr;</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+    let Corporate = document.getElementById("Corporate");
+    let sustainable=document.getElementById("sustainable")
+    let main_section = document.getElementById("main-section");
+
+    Corporate.addEventListener("click", (e) => {
+        e.preventDefault();
+        Corporatedisplay();
+    });
+
+    function Corporatedisplay() {
+        main_section.innerHTML = ""; // Clear existing content
+
+        let board = document.createElement("div"); // Create a div
+        board.className = "board_directors"; // Assign class
+
+        board.innerHTML = `
+            <section id="board-section">
+                <h2>Board of Directors</h2>
+                <div class="board-grid">
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2022/07/Karl-Johan_Persson_board.jpg" alt="Karl-Johan Persson">
+                        <p>Karl-Johan Persson</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2024/04/Stina_Bergfors_2206_400x247-1545x954.jpg" alt="Stina Bergfors">
+                        <p>Stina Bergfors</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2022/07/anders-dahlvig-400x247-1-1545x954.jpg" alt="Anders Dahlvig">
+                        <p>Anders Dahlvig</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2024/04/lena-patriksson-keller_400x247-1546x954.jpg" alt="Lena Patriksson Keller">
+                        <p>Lena Patriksson Keller</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2024/04/christian-sievert-400x247-1-1545x954.jpg" alt="Christian Sievert">
+                        <p>Christian Sievert</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2024/04/christina-synnergren-400x247-1-1544x954.jpg" alt="Christina Synnergren">
+                        <p>Christina Synnergren</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2024/05/Helena_Saxon-1545x954.jpg" alt="Helena Saxon">
+                        <p>Helena Saxon</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2024/04/danica-kragic-jensfelt-400x247-1-1545x954.jpg" alt="Helena Saxon">
+                        <p>Helena Saxon</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2024/05/Hans_Nilsson-1545x954.jpg" alt="Helena Saxon">
+                        <p>Helena Saxon</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2022/07/therese-nordstrom-1546x954.jpg" alt="Helena Saxon">
+                        <p>Helena Saxon</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2022/07/Keith-barker-1526x954.jpg" alt="Helena Saxon">
+                        <p>Helena Saxon</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2024/04/tim-gahnstrom-400x247-1-1544x954.jpg" alt="Helena Saxon">
+                        <p>Helena Saxon</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2022/07/sofia-almbrandt-1546x954.jpg" alt="Helena Saxon">
+                        <p>Helena Saxon</p>
+                    </div>
+                    <div class="member">
+                        <img src="https://hmgroup.com/wp-content/uploads/2024/05/Agneta-gustafsson-1545x954.jpg" alt="Helena Saxon">
+                        <p>Helena Saxon</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Corporate Governance Links Section -->
+        <div class="corporate-links">
+            <h2>Corporate governance links</h2>
+            <ul>
+                <li><a href="#">About corporate governance</a></li>
+                <li><a href="#">Financial calendar</a></li>
+                <li><a href="#">Annual general meeting</a></li>
+                <li><a href="#">CEO</a></li>
+                <li><a href="#">Company management</a></li>
+                <li><a href="#">Auditors</a></li>
+                <li><a href="#">Audit committee</a></li>
+                <li><a href="#">Extraordinary General Meeting</a></li>
+                <li><a href="#">Financial reports</a></li>
+                <li><a href="#">Tax policy</a></li>
+            </ul>
+        </div>
+        <div id="financial-overview">
+    <div class="stock-price">
+        <h2>151.30 <span>SEK</span></h2>
+        <p class="negative">-0.56% <span>↓</span></p>
+    </div>
+
+    <div class="financial-data">
+        <div class="data-item">
+            <h1>143,000</h1>
+            <p>employees globally (2023)</p>
+        </div>
+        <div class="data-item">
+            <h1>13</h1>
+            <p>billion SEK in profit after financial items (2023)</p>
+        </div>
+        <div class="data-item">
+            <h1>236</h1>
+            <p>billion SEK in net sales in 2023, +6% vs. 2022</p>
+        </div>
+        <div class="data-item">
+            <h1>~4,298</h1>
+            <p>stores in 77 markets</p>
+        </div>
+    </div>
+</div>
+
+        `;
+
+        main_section.appendChild(board); 
+
+    }
+        
+    // careers data
+
+    careers=document.getElementById("careers")
+
+careers.addEventListener("click",(e)=>{
+    e.preventDefault()
+    careersdisplay()
+
+})
+
+function careersdisplay() {
+    main_section.innerHTML = "";
+    let career = document.createElement("div");
+    career.className = "career-section"; // Correct class name
+
+    career.innerHTML = `
+    <div class=career-class hero>
+        <h1>Design for everyone</h1>
+        <h2>& find inspiration everywhere</h2>
+        <div class="carrer-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="SEARCH FOR A ROLE, CITY, FUNCTION...">
+        </div>
+    </div>
+
+
+
+
+    <div class="career-info">
+    <div class="career-text">
+        <p>
+            What do you want to be? At H&M you don’t have to be just one thing.
+            Be a dreamer & a doer. Make a difference on your own & never stand alone.
+            Be here and there today & discover everything you can be tomorrow.
+            Be yourself & more at H&M.
+        </p>
+    </div>
+
+    <div class="career-stats">
+        <div class="stat">
+            <span class="label">AVAILABLE ROLES</span>
+            <span class="number">1758</span>
+        </div>
+        <div class="stat">
+            <span class="label">COUNTRIES</span>
+            <span class="number">89</span>
+        </div>
+    </div>
+</div>
+
+<div class="image-container">
+        <img src="https://career.hm.com/app/uploads/2024/08/home_card-1_student.jpg" alt="Person with colorful nails">
+        <img src="https://career.hm.com/app/uploads/2024/08/home_card-3_all-jobs.png" alt="H&M Store in New York">
+        <img src="https://career.hm.com/app/uploads/2024/08/home_card-2_already-working.png" alt="Person sewing with thread spool">
+    </div>
+
+    <div class="interest-section">
+        <h3>FOLLOW YOUR INTEREST & SEE WHERE THEY LEAD YOU</h3>
+        <div class="text-cloud">
+            <span>Buying & Sourcing <sup>39</sup> & Branding, Marketing & Communication <sup>2</sup> & Sustainability <sup>5</sup> & Logistics <sup>34</sup></span>
+            <span>& Legal, Administration, Security & Compliance <sup>10</sup> & Leasing, Construction, & Operations <sup>1595</sup></span>
+            <span>& Design & Product Development <sup>20</sup> & Business Controlling <sup>11</sup></span>
+        </div>
+    </div>
+
+    `;
+
+    main_section.appendChild(career);
+}
+
+
+
+
+
+
+
+         // Inject CSS styles dynamically
+    let style = document.createElement("style");
+    style.innerHTML = `
+        #board-section {
+            text-align: center;
+            padding: 5rem 2rem;
+            background-color: #f8f9fa;
+        }
+        #board h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+        .board-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            justify-content: center;
+        }
+        .member {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+        .member p {
+            font-size: 1.2rem;
+            color: #555;
+            font-weight: bold;
+        }
+
+
+
+            /* Styling Corporate Governance Links */
+        .corporate-links {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .corporate-links h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 1rem;
+        }
+        .corporate-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .corporate-links ul li {
+            margin-bottom: 0.5rem;
+        }
+        .corporate-links ul li a {
+            text-decoration: underline;
+            color: black;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .corporate-links ul li a:hover {
+            color: #007bff;
+        }
+
+        #financial-overview {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            font-family: Arial, sans-serif;
+        }
+        
+        .stock-price {
+            text-align: left;
+            font-size: 1.5rem;
+        }
+        
+        .stock-price span {
+            font-size: 1rem;
+            color: gray;
+        }
+        
+        .negative {
+            color: red;
+            font-size: 1rem;
+        }
+        
+        .financial-data {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .data-item h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .data-item p {
+            font-size: 1rem;
+            color: gray;
+            margin-top: 0.5rem;
+        }
+
+
+
+
+/* Background Section */
+.career-class {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://career.hm.com/app/uploads/2024/08/home_header_d-2880x1620.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Overlay for better readability */
+.career-class::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+.career-class h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.career-class h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: normal;
+    position: relative;
+}
+
+/* Search Bar Container */
+.carrer-container {
+    position: relative;
+    width: 50%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+/* Search Input */
+.carrer-container input {
+    width: 100%;
+    padding: 15px 50px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    color: #333;
+}
+
+/* Search Icon */
+.carrer-container .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-class h1 {
+        font-size: 2.5rem;
+    }
+
+    .career-class h2 {
+        font-size: 1.5rem;
+    }
+
+    .carrer-container {
+        width: 80%;
+    }
+}
+
+
+
+.career-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+/* Text Section */
+.career-text {
+    width: 60%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* Statistics Section */
+.career-stats {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.number {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-info {
+        width: 90%;
+    }
+    
+    .career-text {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .career-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat {
+        margin-bottom: 20px;
+    }
+
+    .number {
+        font-size: 3rem;
+    }
+}
+
+
+
+.image-container {
+    display: flex;
+    gap: 10px; /* Spacing between images */
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 33.3%;
+    height: auto;
+    object-fit: cover;
+}
+
+.interest-section {
+    width: 80%;
+    max-width: 1200px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.text-cloud {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.4;
+    word-spacing: 6px;
+}
+
+.text-cloud sup {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+
+
+    `;
+    
+    // Append the styles to the document head
+    document.head.appendChild(style);
+        
+    </script>
+</body>
+</html>

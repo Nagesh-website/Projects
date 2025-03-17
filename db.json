@@ -1,0 +1,568 @@
+{
+  "ladies": [
+    {
+      "id": 1,
+      "name": "Low-waisted twill trousers",
+      "type": "trousers",
+      "image": "https://image.hm.com/assets/hm/9b/56/9b56d0fd33916d9661d8a4b48ae04fdfa78f9293.jpg?imwidth=384",
+      "price": "Rs. 389.00",
+      "rating": 4.5,
+      "color": "black"
+    },
+    {
+      "id": 2,
+      "name": "Crease-leg trousers",
+      "type": "trousers",
+      "image": "https://image.hm.com/assets/hm/e3/a7/e3a7efe4f98154b6f8ab3bc9bd75aea7b8a71720.jpg?imwidth=384",
+      "price": "Rs. 389.00",
+      "rating": 4.1,
+      "color":"black" 
+    },
+    {
+      "id": 3,
+      "name": "Barrel-leg twill trousers",
+      "type": "trousers",
+      "image": "https://image.hm.com/assets/hm/17/b3/17b3ff8c85402ad4907f2be30dea2b24c9e2ee5e.jpg?imwidth=384",
+      "price": "Rs. 529.00",
+      "rating": 4.0,
+      "color":"brown" 
+    },
+    {
+      "id": 4,
+      "name": "Low-waisted twill trousers",
+      "type": "trousers",
+      "image": "https://image.hm.com/assets/hm/9b/56/9b56d0fd33916d9661d8a4b48ae04fdfa78f9293.jpg?imwidth=384",
+      "price": "Rs. 689.00",
+      "rating": 4.1,
+      "color":"brown" 
+    },
+    {
+      "id": 5,
+      "name": "Barrel-leg twill trousers",
+      "type": "trousers",
+      "image": "https://image.hm.com/assets/hm/c0/e9/c0e93cbdf75caae8ccb2db12a43a06b19cd87d5f.jpg?imwidth=384",
+      "price": "Rs. 789.00",
+      "rating": 3.5,
+      "color":"white" 
+    },
+    {
+      "id": 6,
+      "name": "Straight High Jeans",
+      "type": "trousers",
+      "image": "https://image.hm.com/assets/hm/46/4d/464d97b78e7dde57ae1dbac2361a8298118c3286.jpg?imwidth=384",
+      "price": "Rs. 599.00",
+      "rating": 3.8,
+      "color":"blue"  
+    },
+    {
+      "id": 7,
+      "name": "Collared cropped top",
+      "type": "top",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff2%2Fd2%2Ff2d2b24f2c0d47f5f6507e63b25a479d1a2631da.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 599.00",
+      "rating": 3.8,
+      "color":"black"  
+    },
+    {
+      "id": 8,
+      "name": "Jersey top",
+      "type": "top",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fee%2F05%2Fee0549d1fcba079ae1939e52dfd4023135ac4074.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 799.00",
+      "rating": 4.5,
+      "color":"black"  
+    },
+    {
+      "id": 9,
+      "name": "Collared cropped top",
+      "type": "top",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fba%2Fc1%2Fbac1b8d7e69f43634e6d11ad80f6505a5a20eedb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 399.00",
+      "rating": 3.1,
+      "color":"blue"  
+    },
+    {
+      "id": 10,
+      "name": "Long-sleeved top",
+      "type": "top",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F6b%2Fb6%2F6bb64ee7df31cafdf10a58e20012bf1ed13752ae.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 899.00",
+      "rating": 4.6,
+      "color":"light beige"  
+    },
+    {
+      "id": 11,
+      "name": "Sequined shoulder-pad top",
+      "type": "top",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F35%2Ff4%2F35f47682458cb3cbe369a2784c3f8609a6ef4373.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 999.00",
+      "rating": 4.8,
+      "color":"black"  
+    },
+    {
+      "id": 12,
+      "name": "Ribbed top",
+      "type": "top",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Feb%2F4a%2Feb4a9d021b02cf099dbe9f21be53d5ad8f483877.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_tops_longsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 699.00",
+      "rating": 3.8,
+      "color":"bergundy"  
+    },
+    {
+      "id": 13,
+      "name": "Straight Regular Jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F62%2Ff1%2F62f17b85d0fed66539413ac6ac12632f23ea289b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+      "price": "Rs. 1149.00",
+      "rating": 4.1,
+      "color":"light blue"  
+    },
+    {
+      "id": 14,
+      "name": "Ankle-length jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F91%2Fb0%2F91b059ebaab0c60681d9f3bef6f0c32085fb86cb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_divided_jeans_loose%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 899.00",
+      "rating": 4.5,
+      "color":"white"  
+    },
+    {
+      "id": 15,
+      "name": "skinny high jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F90%2F6d%2F906d61035efafbb23dbf1d75db8e448cd28e41f3.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_divided_jeans_skinny%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 1149.00",
+      "rating": 3.9,
+      "color":"dark grey"  
+    },
+    {
+      "id": 16,
+      "name": "baggy low jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F24%2F4e%2F244ee413e34ea35e0fa85cd5dc9387c99e3db0cd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 949.00",
+      "rating": 4.4,
+      "color":"light denim blue"  
+    },
+    {
+      "id": 17,
+      "name": "crease leg tapered jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fbc%2F4e%2Fbc4e3e9afcfc07a55dfef5343e03e7c4fc838ad8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1149.00",
+      "rating": 4.2,
+      "color":"denim blue"  
+    },
+    {
+      "id": 18,
+      "name": "Baggy regular jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F3b%2Fee%2F3bee401e60e5e489f779c9fedf6f1a548f5d630e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 899.00",
+      "rating": 3.8,
+      "color":"denim blue"  
+    },
+    {
+      "id": 19,
+      "name": "trainers",
+      "type": "shoes",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb5%2F5b%2Fb55befe5d14745e38419c28f070382d95b01d472.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 2699.00",
+      "rating": 4.5,
+      "color":"light beige" 
+    },
+    {
+      "id": 20,
+      "name": "naped sock boots",
+      "type": "shoes",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6f%2F4c%2F6f4c8f3d40140b4c010944686e32d5b6ba5a0346.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 2,999.00",
+      "rating": 4.3,
+      "color":"black" 
+    },
+    {
+      "id": 21,
+      "name": "deck shoes",
+      "type": "shoes",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F39%2Fb5%2F39b5c1e7df9d8dbcbd491dd681a3545e88c762d4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BENVIRONMENT%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "price": "Rs. 2,299.00",
+      "rating": 4.1,
+      "color":"brown" 
+    },
+    {
+      "id": 22,
+      "name": "loafers",
+      "type": "shoes",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F5e%2F54%2F5e546f088b4b1ce216a8e995a98cb68756d600cc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 2,699.00",
+      "rating": 4.2,
+      "color":"black" 
+    },
+    {
+      "id": 23,
+      "name": "heeled ankle boots",
+      "type": "shoes",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F87%2F5a%2F875ae3e89ecf9a0521128acd12a9e99670927113.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "price": "Rs. 2,999.00",
+      "rating": 4.5,
+      "color":"black" 
+    },
+    {
+      "id": 24,
+      "name": "bowling bag",
+      "type": "bags",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F36%2F34%2F3634010bd0750f7350f776409686e090a2fc7442.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 3,999.00",
+      "rating": 4.5,
+      "color":"black" 
+    },
+    {
+      "id": 25,
+      "name": "crossbody bag",
+      "type": "bags",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fef%2F37%2Fef377d8bb78de780031212101b4d9e7a4233cda6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 1,899.00",
+      "rating": 4.4,
+      "color":"dark khaki green" 
+    }
+  ],
+
+  "mens":[
+    {
+      "id": 1,
+      "name": "regular jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb7%2F6b%2Fb76b736b5319a8f7d4269a290f80ccc178cf23b6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,149.00",
+      "rating": 4.5,
+      "color": "denim blue"
+    },
+    {
+      "id": 2,
+      "name": "regular fit jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F20%2F5c%2F205c34717f2c8d8ac0a30733aa3b8531cfa53d95.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,149.00",
+      "rating": 4.1,
+      "color":"black" 
+    },
+    {
+      "id": 3,
+      "name": "baggy cargo jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F32%2F32%2F32321b54a59a826cc13a027bec5a14fe295be188.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jeans_loose%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,799.00",
+      "rating": 4.0,
+      "color":"beige" 
+    },
+    {
+      "id": 4,
+      "name": "loose jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fa3%2F65%2Fa3653aa0145a6408e8798410621cb1fc4f704c2b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 2,299.00",
+      "rating": 4.1,
+      "color":"black" 
+    },
+    {
+      "id": 5,
+      "name": "relaxed fit jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F74%2F39%2F74390bb1c7d62b505f6f86f9a71caf72252b0f39.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,349.00",
+      "rating": 4.4,
+      "color":"dark brown" 
+    },
+    {
+      "id": 6,
+      "name": "regular fit shirt",
+      "type": "shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Ff0%2F4d%2Ff04d3acde613b5988a60064b8ed3218b380ae368.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts_casual%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 999.00",
+      "rating": 4.1,
+      "color":"black" 
+    },
+    {
+      "id": 7,
+      "name": "regular fit shirt",
+      "type": "shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fde%2F3a%2Fde3ac986c64cd533bd80e0a5ed090aee45290334.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirts_casual%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,399.00",
+      "rating": 4.4,
+      "color":"white" 
+    },
+    {
+      "id": 8,
+      "name": "loose fit shirt",
+      "type": "shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fa4%2F5d%2Fa45de8c4bb63f005f95b9046f5d41e28e8a74866.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,379.00",
+      "rating": 4.2,
+      "color":"dark brown" 
+    },
+    {
+      "id": 9,
+      "name": "regular fit patterned shirt",
+      "type": "shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F12%2F18%2F1218d5232d12dbe76a1694ef1ecf4a94333baafb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,299.00",
+      "rating": 4.3,
+      "color":"balck/patterned" 
+    },
+    {
+      "id": 10,
+      "name": "relaxed fit linen shirt",
+      "type": "shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fa7%2F3d%2Fa73d57a7fd320b237688396e1b19389fe26beef4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 749.00",
+      "rating": 3.5,
+      "color":"white" 
+    },
+    {
+      "id": 11,
+      "name": "loose fit printed t-shirt",
+      "type": "t-shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fbc%2F06%2Fbc06b942878dd9c9bf2d73a055fcd2af74bc7890.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_printed%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 279.00",
+      "rating": 3.8,
+      "color":"white" 
+    },
+    {
+      "id": 12,
+      "name": "loose fit printed t-shirt",
+      "type": "t-shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F71%2F6a%2F716a59313b3dd446020c6c26f1c02dade8dd97b9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_printed%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 699.00",
+      "rating": 3.8,
+      "color":"black" 
+    },
+    {
+      "id": 13,
+      "name": "loose fit long selve t-shirt",
+      "type": "t-shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F17%2F2c%2F172cb5bf3c600a7d05b1c5ef5972f3ef443a30c7.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_longsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,379.00",
+      "rating": 3.8,
+      "color":"dark grey" 
+    },
+    {
+      "id": 14,
+      "name": "regualr fit t-shirt",
+      "type": "t-shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F99%2Fe6%2F99e6e15184f4524233025c8633407c553bfffcb9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 399.00",
+      "rating": 4.2,
+      "color":"burgundy" 
+    },
+    {
+      "id": 15,
+      "name": "oversized t-shirt",
+      "type": "t-shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fa0%2Fb4%2Fa0b40613c998abb77c33c5d94af48851628ffb2e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 899.00",
+      "rating": 4.4,
+      "color":"white" 
+    },
+    {
+      "id": 16,
+      "name": "loose fit hoodie",
+      "type": "hoodies",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fe9%2F66%2Fe966c157e4819b45a642184655551ad752e9c346.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,499.00",
+      "rating": 4.2,
+      "color":"pink" 
+    },
+    {
+      "id": 17,
+      "name": "loose fit hoodie",
+      "type": "hoodies",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F71%2Fc6%2F71c6cae850ee8ff11fc8c7826695410a1addbb61.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 2,999.00",
+      "rating": 4.1,
+      "color":"forest blue" 
+    },
+    {
+      "id": 18,
+      "name": "loose fit hoodie",
+      "type": "hoodies",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fbd%2Fd2%2Fbdd247276eb6bd671a5308ae0ccc97522bc4d999.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_cardigansjumpers_turtleneck%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,999.00",
+      "rating": 4.1,
+      "color":"light beige" 
+    },
+    {
+      "id": 19,
+      "name": "loose fit zip hoodie",
+      "type": "hoodies",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F0a%2F11%2F0a11415d425a0f392d6fec669790b7181e53d24f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,499.00",
+      "rating": 4.5,
+      "color":"black" 
+    },
+    {
+      "id": 20,
+      "name": "loose fit printed hoodie",
+      "type": "hoodies",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb7%2Fc1%2Fb7c142b1673d3facd6dd96f21151db6559565508.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 2,299.00",
+      "rating": 4.4,
+      "color":"black" 
+    },
+    {
+      "id": 21,
+      "name": "trainers",
+      "type": "shoes",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb7%2Fd1%2Fb7d13ce9554dc992366ac53ba7a89849798ba9cc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shoes_sneakers%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+      "price": "Rs. 1,999.00",
+      "rating": 4.4,
+      "color":"white" 
+    },
+    {
+      "id": 22,
+      "name": "canvas trainers",
+      "type": "shoes",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fba%2Fba%2Fbaba85996813f8c52d202c3d75b8db756c32f162.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVEDETAIL%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 999.00",
+      "rating": 4.2,
+      "color":"white" 
+    }
+
+  ],
+  "kids":[
+    {
+      "id": 1,
+      "name": "chenille knit jumper",
+      "type": "t-shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F97%2Fb9%2F97b997822ed6a8d2ef2c4d9ae428e28925ce18df.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 1,299.00",
+      "rating": 4.2,
+      "color":"peach"  
+    },
+    {
+      "id": 2,
+      "name": "swearshirt",
+      "type": "t-shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F1f%2F20%2F1f207a8a10a6aad6070d9e63fa5946358869a997.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bkids_girls_clothing_jumperssweatshirts_sweatshirts%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 999.00",
+      "rating": 4.3,
+      "color":"light yellow"  
+    },
+    {
+      "id": 3,
+      "name": "printed cotton t-shirt",
+      "type": "t-shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb7%2F6e%2Fb76efc7e3ee894efd1604fb1a697eeb8b2e54e2f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 399.00",
+      "rating": 4.4,
+      "color":"mint green"  
+    },
+    {
+      "id": 4,
+      "name": "boxystyle t-shirt",
+      "type": "t-shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ffa%2F7d%2Ffa7d248cc4f4558ec74e49ca243d7fac18e1d719.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 1,299.00",
+      "rating": 4.2,
+      "color":"peach"  
+    },
+    {
+      "id": 5,
+      "name": "cotton jersey t-shirt",
+      "type": "t-shirts",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F29%2F9c%2F299c5c5e684455553983658abf2541556c36056d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 899.00",
+      "rating": 4.1,
+      "color":"dark grey"  
+    },
+    {
+      "id": 6,
+      "name": "flared leg jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F43%2F03%2F4303d6be921f910ee186b32081987ff4e73bc8d8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bkids_girls_clothing_trousersjeans_jeans_flare%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 999.00",
+      "rating": 4.1,
+      "color":"denim blue"  
+    },
+    {
+      "id": 7,
+      "name": "denim jeggings",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F5a%2Fb0%2F5ab0f7096e64bb7133cd4a36e4492cdcc903b5cd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bkids_girls_clothing_trousersjeans_jeans_skinny%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/mobilemain]",
+      "price": "Rs. 699.00",
+      "rating": 4.3,
+      "color":"denim black"  
+    },
+    {
+      "id": 8,
+      "name": "wide leg jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fc8%2F49%2Fc8497b3cb23dd23a47c1b4f5454e4f1707a92c9f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bkids_girls_clothing_trousersjeans_jeans_relaxed%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 1,799.00",
+      "rating": 4.1,
+      "color":"light denim blue"  
+    },
+    {
+      "id": 9,
+      "name": "wide leg paper bag jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb1%2F55%2Fb155d3aff209cb681a3addbbddf8f32006898964.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bkids_girls_clothing_trousersjeans_jeans_relaxed%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,499.00",
+      "rating": 4.5,
+      "color":"beige"  
+    },
+    {
+      "id": 10,
+      "name": "appliqued Jeans",
+      "type": "jeans",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F37%2F32%2F3732208d52a0942ddeb0e06edf0495848f1349dd.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 1,899.00",
+      "rating": 4.1,
+      "color":"dark grey"  
+    },
+    {
+      "id": 11,
+      "name": "brushed inside hoodie",
+      "type": "hoodies",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd3%2F2c%2Fd32c82f5bc56251ab8056f152be42d0e0150a5c7.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bkids_boys_clothing_jumperssweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 899.00",
+      "rating": 4.1,
+      "color":"yellow"  
+    },
+    {
+      "id": 12,
+      "name": "brushed inside hoodie",
+      "type": "hoodies",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F4f%2F92%2F4f920027e67147da581012cb7efbc0cee94a179d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 999.00",
+      "rating": 4.5,
+      "color":"khaki beige"  
+    },
+    {
+      "id": 13,
+      "name": "zip hoodie",
+      "type": "hoodies",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F25%2Fa3%2F25a309d4d673ea90d4ca85fbd9fd74acc41435f1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bkids_girls_boys_newarrivals%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 2,299.00",
+      "rating": 4.1,
+      "color":"white"  
+    },
+    {
+      "id": 14,
+      "name": "brushed inside hoodie",
+      "type": "hoodies",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F28%2Ff5%2F28f546aee6611c39af65bb6939a6b27b2ef3dd61.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bkids_boys_clothing_jumperssweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+      "price": "Rs. 899.00",
+      "rating": 4.2,
+      "color":"grey"  
+    },
+    {
+      "id": 15,
+      "name": "warm lined hoodie",
+      "type": "hoodies",
+      "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F46%2Fc9%2F46c9910f6bc9660f9b574930d5469e5107b201eb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D",
+      "price": "Rs. 799.00",
+      "rating": 4.3,
+      "color":"navy blue"  
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&m Wishlist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        h2 {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: #444;
+        }
+
+        .container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            margin-bottom: 30px;
+        }
+
+        .container div {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .remove-btn {
+            background-color: #ff4d4d;
+        }
+
+        .remove-btn:hover {
+            background-color: #ff1a1a;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container div {
+                padding: 15px;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            button {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>Wishlist</h2> -->
+    <div id="wishlist-container" class="container"></div>
+
+    <script>
+        let wishlistData = JSON.parse(localStorage.getItem("wishlist")) || [];
+        const wishlistContainer = document.getElementById("wishlist-container");
+
+        // Render Wishlist
+        function renderWishlist() {
+    wishlistContainer.innerHTML = ""; // Clear container
+    wishlistData.forEach((item, index) => {
+        let child = document.createElement("div");
+        let img = document.createElement("img");
+        let childa = document.createElement("h3");
+        let childb = document.createElement("p");
+        let childc = document.createElement("p");
+        let childd = document.createElement("p");
+        let removeButton = document.createElement("button");
+
+        img.src = item.image || 'https://via.placeholder.com/150';
+        childa.innerText = item.name || "No Name";
+        childb.innerText = `Color: ${item.color || "Unknown"}`;
+        childc.innerText = `Rating: ${item.rating || "N/A"}`;
+        childd.innerText = `Price: $${item.price || "N/A"}`;
+        removeButton.innerText = "Remove";
+        removeButton.className = "remove-btn";
+        removeButton.onclick = () => removeItemFromWishlist(index);
+
+        child.append(img, childa, childb, childc, childd, removeButton);
+        wishlistContainer.append(child);
+    });
+}
+
+
+        // Remove Item from Wishlist
+        function removeItemFromWishlist(index) {
+            wishlistData.splice(index, 1); // Remove item from wishlist
+            localStorage.setItem("wishlist", JSON.stringify(wishlistData));
+            renderWishlist();
+        }
+
+        // Initial render
+        renderWishlist();
+    </script>
+</body>
+</html>

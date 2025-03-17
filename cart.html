@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M Cart</title>
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: bisque;
+            padding: 20px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #444;
+        }
+
+        #container button{
+            background-color: rgb(235, 121, 121);
+        }
+        #container button:hover{
+            background-color: rgb(231, 15, 15);
+        }
+
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Cart styling */
+        #container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+        #container div {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #container div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            max-width: 80%;
+            height: 50%;
+            border-radius: 8px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* Payment section styling */
+        #payment-section {
+            margin-top: 20px;
+        }
+
+        .payment-card {
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .debit-card-form {
+            background-color: #fff3e0;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .debit-card-form input {
+            width: 80%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .address-field {
+            margin: 10px 0;
+            display: block;
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .address-field, .debit-card-form input {
+                width: 100%;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            button {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="payment-section">
+        <h3>Payment Options</h3>
+        <button id="paypal">Check out</button>
+    </div>
+    <script>
+        let getdata = JSON.parse(localStorage.getItem("cart")) || [];
+
+        let container = document.getElementById("container");
+
+        function renderCart() {
+            container.innerHTML = ""; // Clear the container before rendering
+            getdata.forEach((val, index) => {
+                let child = document.createElement("div");
+                let img = document.createElement("img");
+                let childa = document.createElement("h3");
+                let childb = document.createElement("p");
+                let childc = document.createElement("p");
+                let childd = document.createElement("p");
+                let removeButton = document.createElement("button");
+
+                img.src = val.image;
+
+                childa.innerText = val.name;
+                childb.innerText = `Color: ${val.color}`;
+                childc.innerText = `Rating: ${val.rating}`;
+                childd.innerText = `Price: ${val.price}`;
+                removeButton.innerText = "Remove";
+                removeButton.onclick = () => removeItem(index);
+
+                child.append(img, childa, childb, childc, childd, removeButton);
+                container.append(child);
+            });
+        }
+
+        function removeItem(index) {
+            getdata.splice(index, 1); // Remove the item from the array
+            localStorage.setItem("cart", JSON.stringify(getdata)); // Update localStorage
+            renderCart(); // Re-render the cart
+        }
+
+        renderCart(); // Initial render
+
+        // Payment Section Logic
+        let paypalButton = document.getElementById("paypal");
+        let paymentSection = document.getElementById("payment-section");
+
+        function payment() {
+            paymentSection.innerHTML = ""; // Clear previous content
+
+            // Calculate the total price
+            let total = getdata.reduce((acc, val) => {
+                let priceValue = parseFloat(val.price.replace("Rs.", "").replace(",", "").trim());
+                return acc + priceValue;
+            }, 0);
+
+            let totalPrice = document.createElement("h3");
+            totalPrice.innerText = `Total Price: Rs. ${total.toFixed(2)}`;
+
+            let addressForm = ` 
+                <h3>Enter your address</h3>
+                <input class="address-field" type="text" placeholder="Name" required />
+                <input class="address-field" type="text" placeholder="Mobile Number" required />
+                <input class="address-field" type="text" placeholder="Colony" required />
+                <input class="address-field" type="text" placeholder="City" required />
+                <input class="address-field" type="text" placeholder="Pincode" required />
+                <input class="address-field" type="text" placeholder="State" required />
+                <button id="proceedPayment">Proceed to Payment</button>
+                <button id="cancelPayment">Cancel</button>
+            `;
+
+            paymentSection.innerHTML = totalPrice.outerHTML + addressForm;
+
+            document.getElementById("proceedPayment").addEventListener("click", showPaymentOptions);
+            document.getElementById("cancelPayment").addEventListener("click", () => {
+                paymentSection.innerHTML = `<h3>Payment Options</h3><button id="paypal">Check out</button>`;
+                document.getElementById("paypal").addEventListener("click", payment);
+            });
+        }
+
+        function showPaymentOptions() {
+            paymentSection.innerHTML = `
+                <div class="payment-card">
+                    <h3>Payment Options</h3>
+                    <button id="debitCard">Pay with Debit Card</button>
+                    <button id="cashOnDelivery">Cash on Delivery</button>
+                </div>
+            `;
+
+            document.getElementById("debitCard").addEventListener("click", () => {
+                showDebitCardForm();
+            });
+
+            document.getElementById("cashOnDelivery").addEventListener("click", () => {
+                alert("Your order will be delivered with Cash on Delivery.");
+                paymentSection.innerHTML = "<h3>Thank you for your purchase!</h3>";
+            });
+        }
+
+        function showDebitCardForm() {
+            paymentSection.innerHTML = `
+                <div class="debit-card-form">
+                    <h3>Enter Debit Card Details</h3>
+                    <input type="text" placeholder="Card Number" required />
+                    <input type="text" placeholder="Expiry Date (MM/YY)" required />
+                    <input type="text" placeholder="CVV" required />
+                    <input type="text" placeholder="Cardholder's Name" required /><br>
+                    <button id="submitCardDetails">Submit</button>
+                    <button id="cancelDebitCard">Cancel</button>
+                </div>
+            `;
+
+            document.getElementById("submitCardDetails").addEventListener("click", () => {
+                alert("Debit card details submitted successfully!");
+                paymentSection.innerHTML = "<h3>Thank you for your purchase!</h3>";
+            });
+
+            document.getElementById("cancelDebitCard").addEventListener("click", () => {
+                showPaymentOptions();
+            });
+        }
+
+        paypalButton.addEventListener("click", payment);
+    </script>
+</body>
+</html>

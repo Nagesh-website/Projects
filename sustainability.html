@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .sustainability-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('https://image.hm.com/content/dam/sustainability-site/startpage/9501-CPD-01_16x9-sustainability-destination.jpg?imwidth=2160') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sustainability-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: black;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            max-width: 100vw;
+            margin: 20px auto;
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .text-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            border-top-right-radius: 10px;
+        }
+
+        .text-overlay h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .text-overlay p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0 0;
+        }
+
+        .cards-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 50px 20px;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: white;
+            padding: 15px;
+            width: 85%;
+            border-top-right-radius: 10px;
+        }
+
+        .card-text h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .card-text p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sustainability-section">
+        <h1 class="sustainability-text">Sustainability</h1>
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/sustainability-site/lets-clean-up/9501-CPM-39_16x9-lets-clean-up.jpg]&scale=size[1200]&sink=format[jpeg],quality[80]" alt="H&M Reusable Packaging">
+            <div class="text-overlay">
+                <h2>Hello re-usable packaging!</h2>
+                <p>Reuse eco-friendly paper bags</p>
+            </div>
+        </div>
+    </div>
+    <div class="cards-section">
+        <div class="card">
+            <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/sustainability-site/startpage/9035C-16x9-sustainability-teaser-take-care.jpg]&scale=size[1200]&sink=format[jpeg],quality[80]" alt="Sustainability 1">
+            <div class="card-text">
+                <h2>Let's close the loop</h2>
+                <p>The only trends worth following? Recycling and repairing.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www2.hm.com/content/dam/sustainability-site/lets-clean-up/9501-CPM-40_16x9-lets-clean-up.jpg" alt="Sustainability 2">
+            <div class="card-text">
+                <h2>Let's innovate</h2>
+                <p>Fashion made from grapes and waste? Welcome to the future.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/sustainability-site/lets-clean-up/9501-CPD-08_1x1-lets-clean-up.jpg]&scale=size[562]&sink=format[jpeg],quality[80]" alt="Sustainability 3">
+            <div class="card-text">
+                <h2>Let's be fair</h2>
+                <p>Can fashion be fair? Yes!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

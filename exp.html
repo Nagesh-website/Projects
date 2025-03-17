@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Data Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .categories button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="categories">
+        <button id="ladies">Ladies</button>
+        <button id="men">Mens</button>
+        <button id="kids">Kids</button>
+    </div>
+    <div id="card-container" class="card-container"></div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDh1wbgGqzGlrmScEA6AKa4wqBCVDSx4Vk",
+            authDomain: "h-and-m-api.firebaseapp.com",
+            projectId: "h-and-m-api",
+            storageBucket: "h-and-m-api.firebasestorage.app",
+            messagingSenderId: "814889958498",
+            appId: "1:814889958498:web:43ff0b8c56779fd89ce53b"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        // DOM Elements
+        const ladiesButton = document.getElementById("ladies");
+        const menButton = document.getElementById("men");
+        const kidsButton = document.getElementById("kids");
+        const cardContainer = document.getElementById("card-container");
+
+        // Function to fetch and display data
+        function fetchAndDisplay(category) {
+            cardContainer.innerHTML = "Loading...";
+            get(ref(database, category))
+                .then(snapshot => {
+                    if (snapshot.exists()) {
+                        const data = snapshot.val();
+                        displayCards(data);
+                    } else {
+                        cardContainer.innerHTML = "<p>No data available</p>";
+                    }
+                })
+                .catch(error => {
+                    cardContainer.innerHTML = `<p>Error: ${error.message}</p>`;
+                });
+        }
+
+        // Function to display cards
+        function displayCards(data) {
+            cardContainer.innerHTML = ""; // Clear previous data
+            Object.entries(data).forEach(([key, item]) => {
+                const card = document.createElement("div");
+                card.className = "card";
+                card.innerHTML = `
+                    <img src="${item.image || 'https://via.placeholder.com/250'}" alt="${item.name || 'No Image'}">
+                    <h3>${item.name || "No Name"}</h3>
+                    <p>Color ${item.color || "No Description"}</p>
+                    <p>Rating ${item.rating}</p>
+                    <p><strong>Price:</strong> $${item.price || "N/A"}</p>
+                `;
+                cardContainer.appendChild(card);
+            });
+        }
+
+        // Event Listeners
+        ladiesButton.addEventListener("click", () => fetchAndDisplay("ladies"));
+        menButton.addEventListener("click", () => fetchAndDisplay("mens"));
+        kidsButton.addEventListener("click", () => fetchAndDisplay("kids"));
+    </script>
+</body>
+</html>

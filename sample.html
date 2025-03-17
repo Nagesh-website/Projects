@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js";
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyDh1wbgGqzGlrmScEA6AKa4wqBCVDSx4Vk",
+          authDomain: "h-and-m-api.firebaseapp.com",
+          projectId: "h-and-m-api",
+          storageBucket: "h-and-m-api.firebasestorage.app",
+          messagingSenderId: "814889958498",
+          appId: "1:814889958498:web:43ff0b8c56779fd89ce53b"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const dbRef = ref(database);
+
+        // Fetch data from the database
+        get(dbRef)
+          .then((snapshot) => {
+            if (snapshot.exists()) {
+              console.log(snapshot.val());
+            } else {
+              console.log("No data available");
+            }
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+    </script>
+</body>
+</html>
